@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>User List</h2>
+    <!-- @if(hasError){
+        <div class="alert alert-danger">
+            <strong>Error!</strong> Unable to load user data. {{ errorMessage }}
+        </div>
+    } -->
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Website</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of UserList" [class.table-dark]=" user.id === lastVisitedId">
+            <td>{{user.id}}</td>
+            <td><span class="pointer" (click)="navigateToDetails(user.id)">{{ user.name }}</span></td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.website}}</td>
+        </tr>
+    </tbody>
+
+</table>
+</div>

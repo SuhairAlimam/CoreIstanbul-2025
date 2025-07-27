@@ -36,6 +36,8 @@ import { EmployeeListComponent } from './employee/components/employee-list/emplo
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EmployeeDetailsComponent } from './employee/components/employee-details/employee-details.component';
+import { UserListComponent } from './user/components/user-list/user-list.component';
+import { UserDetailsComponent } from './user/components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -54,28 +56,19 @@ import { EmployeeDetailsComponent } from './employee/components/employee-details
     PipesComponent,
     TemplateReferenceVariableComponent,
     TwoWayBindingComponent,
-    TypographyComponent,
-    ButtonsComponent,
-    ButtonTogglesComponent,
-    IconsComponent,
-    BadgesComponent,
-    MenusComponent,
-    PanelsComponent,
-    TabsComponent,
-    StepperComponent,
-    InputsComponent,
-    DialogsComponent,
     BootstrapComponent,
     EmployeeListComponent,
     NotFoundComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    UserListComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
     SharedModule, 
     NgbModule,
+    FormsModule,
     HttpClientModule // Ensure HttpClientModule is imported for HTTP requests
   ],
   providers: [],
